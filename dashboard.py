@@ -8,18 +8,9 @@ from babel.numbers import format_currency
 sns.set(style='dark')
 
 import pandas as pd
-
-# Memuat dataset day
-path_dataset = "/content/data_day.csv"
-day_df = pd.read_csv(path_dataset)
-day_df.head()
-
-import pandas as pd
-
-# Memuat dataset hour
-path_dataset = "/content/data_hour.csv"
-hour_df = pd.read_csv(path_dataset)
-hour_df.head()
+# memuat dataset
+hour_df = pd.read_csv('data_hour.csv')
+day_df = pd.read_csv('data_day.csv')
 
 # memeriksa tipe data dari kolom dalam day_df
 day_df.info()
